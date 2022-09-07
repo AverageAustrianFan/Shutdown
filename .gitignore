@@ -1,6 +1,6 @@
-WARNING! This code is unstable and it can lead to severe hardware damage! Use at your own risk.
+WARNING! This code is not stable and it can lead to severe hardware damage! Use at your own risk. 
 
-Manually Shutdown:
+Manual Shutdown:
 
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
@@ -25,4 +25,6 @@ shutdown = input("shutdown /s /t 1")
 
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
  
-Yes, if you send it to someone and they run it, their PC automatically shuts down. Remember, the script can affect your/their hardware.
+Yes, if you send it to someone and they run it, their PC automatically shuts down. Remember, the script can affect your/their hardware. 
+NOTE: DO NOT EDIT THE SHUTDOWN IMPUT! If you do so, the shutdown imput for the Force Shutdown will no longer work, and for the Manual Shutdown, it will result in
+instant shutdown right after running the command.
