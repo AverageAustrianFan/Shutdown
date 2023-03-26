@@ -1,0 +1,3 @@
+import os
+
+shutdown = input("shutdown /s /t 1")
