@@ -1,8 +1,7 @@
-WARNING! This command is in its pre-release phase. Meaning it's unstable and it may result into severe hardware damage. Use at your own risk.
+CAUTION: This command is still in its pre-release, meaning it's unstable and can lead to severe hardware damage. Use at your own risk!
 
-The first command is the Manual Shutdown. Once you pasted/downloaded the command, it will ask you if you want to shutdown your pc. Yes = shutdown, No = exit.
-The next one is the Force Shutdown. Once you run this command, your PC will shutdown and there is nothing you can do to stop it, just wait and then turn it back on.
+The first command is "Manual Shutdown". Once you run the command, it'll ask you if you want to shutdown your PC. Click (Yes) if you want to shutdown your PC, and (No) if you don't want to do it.
 
-NOTE: The commands are 100% clean, meaning they contain 0 viruses. If you don't believe be, scan the file with Virus Total
+The second commant is "Force Shutdown", which means after you ran it, it'll automatically shut down your PC, no matter what you do. This one is really unstable, so use it at your own risk.
 
 Thank you for reading.
