@@ -1,3 +1,18 @@
-import os
+using System;
+using System.Diagnostics;
 
-shutdown = input("shutdown /s /t 1")
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Shutting down the PC...");
+
+        // Perform immediate shutdown.
+        Shutdown();
+    }
+
+    static void Shutdown()
+    {
+        Process.Start("shutdown", "/s /t 0");
+    }
+}
