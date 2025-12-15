@@ -1,1 +1,1 @@
-This script allows you to shut off your PC or someone else's just by running it. Only works on Windows for now.
+A C# script that automatically shuts down Windows computers with zero warnings or prompts. Uses the Windows shutdown command to force-close all applications and immediately power off the system. Requires administrator privileges to execute the forced shutdown. Use with caution.
