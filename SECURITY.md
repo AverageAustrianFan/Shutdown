@@ -4,7 +4,7 @@ Hello and welcome to the security section. To get started, I'd like to set some 
 2. Only use the script on your own PC - As I mentioned earlier, the script could cause hardware issues, so running it to someone else's computer isn't a really good idea.
 3. Make sure to use a compiler - To run the script you need a compiler. I'd recommend MinGW or Visual Studio for C++ and .NET SDK for C#.
 
-"How long will it take to fix and issue?"
+"How long does it take to fix an issue?"
 
 Usually, fixing an issue can take anywhere from a few hours to a few days. If you encountered an issue, please mention it in the issues tab and I'll try to fix it as soon as possible.
 
