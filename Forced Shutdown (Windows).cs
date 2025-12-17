@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 
 class ShutdownScript
 {
-    // Import the Windows API function
     [DllImport("advapi32.dll", SetLastError = true)]
     private static extern bool ExitWindowsEx(uint uFlags, uint dwReason);
 
@@ -38,19 +37,14 @@ class ShutdownScript
     {
         Console.WriteLine("Initiating system shutdown...");
         
-        // Method 1: Using shutdown command (simpler, works without special privileges)
         ShutdownUsingCommand();
 
-        // Uncomment Method 2 if you want to use Windows API (requires admin)
-        // ShutdownUsingAPI();
     }
 
-    // Simpler method using shutdown.exe command
     static void ShutdownUsingCommand()
     {
         try
         {
-            // /s = shutdown, /f = force close applications, /t 0 = immediate
             Process.Start(new ProcessStartInfo
             {
                 FileName = "shutdown",
@@ -65,12 +59,10 @@ class ShutdownScript
         }
     }
 
-    // Advanced method using Windows API
     static void ShutdownUsingAPI()
     {
         try
         {
-            // Enable shutdown privilege
             IntPtr tokenHandle;
             OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, out tokenHandle);
 
@@ -81,7 +73,6 @@ class ShutdownScript
 
             AdjustTokenPrivileges(tokenHandle, false, ref tkp, 0, IntPtr.Zero, IntPtr.Zero);
 
-            // Shutdown
             ExitWindowsEx(EWX_SHUTDOWN | EWX_FORCE, 0);
         }
         catch (Exception ex)
